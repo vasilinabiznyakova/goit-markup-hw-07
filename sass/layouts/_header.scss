@@ -1,0 +1,27 @@
+.header {
+    border-bottom: 1px solid var(--header-border-color);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.header-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+
+a.current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #2196F3;
+    border-radius: 2px;
+    
+    transform: translateY(28px);
+}
