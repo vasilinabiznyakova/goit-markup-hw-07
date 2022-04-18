@@ -16,7 +16,6 @@
     padding: 6px 30px;
     border: none;
     cursor: pointer;
-
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -27,11 +26,11 @@
     color: var(--primary-text-color-theme-light);
     box-shadow: 0px 4px 4px var(--btn-shadow-color);
     background-color: var(--accent-color);
-
     transition: background-color 250ms var(--transition-timing-function);
+    
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-    background-color: #188ce8;
-}

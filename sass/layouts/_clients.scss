@@ -14,10 +14,11 @@
     border: 1px solid var(--icon-color);
     border-radius: 4px;
     transition: border-color 250ms var(--transition-timing-function);
-}
 
-.clients-list-logo {
-    fill: var(--icon-color);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .clients-list-link {
@@ -30,16 +31,11 @@
 
 .clients-list-logo {
     display: block;
-
+    fill: var(--icon-color);
     transition: fill 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
-}
 
-.clients-list-item:hover,
-.clients-list-item:focus {
-    border-color: var(--accent-color);
-}
-
-.clients-list-link:hover .clients-list-logo,
-.clients-list-link:focus .clients-list-logo {
-    fill: var(--accent-color);
+    .clients-list-link:hover &,
+    .clients-list-link:focus & {
+        fill: var(--accent-color);
+    }
 }

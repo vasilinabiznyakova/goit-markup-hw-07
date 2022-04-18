@@ -2,17 +2,16 @@
     border-bottom: 1px solid var(--header-border-color);
 }
 
-.header-container {
+.header__container {
     display: flex;
     align-items: center;
 }
-.header-text {
+.nav-list__text {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
 
 a.current::after {
     position: absolute;

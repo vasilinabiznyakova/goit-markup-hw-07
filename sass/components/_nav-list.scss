@@ -1,4 +1,4 @@
-.nav-list-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.nav-list-link {
+.nav-list__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;

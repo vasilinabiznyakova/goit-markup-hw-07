@@ -36,6 +36,9 @@
     left: 14px;
     transform: translateY(50%);
     transition: fill 250ms var(--transition-timing-function);
+    .contact-form-input:focus + & {
+        fill: #188ce8;
+    }
 }
 .contact-form-input {
     padding-left: 42px;
@@ -48,10 +51,6 @@
 
     &:focus {
         border-color: var(--accent-color);
-    }
-
-    & + .contact-form-input-logo {
-        fill: #188ce8;
     }
 }
 
@@ -110,9 +109,6 @@
     display: flex;
     align-items: center;
     padding-left: 24px;
-}
-
-.contact-form-checkbox-label {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -149,8 +145,7 @@
     left: 0;
     transform: translateY(-50%);
 }
-
-
+    
 .contact-form-checkbox:checked+.contact-form-checkbox-icon-checked {
     opacity: 1;
 }
@@ -159,6 +154,9 @@
     opacity: 0;
 }
 
+.contact-form-checkbox-icon-checked {
+    opacity: 0;
+}
 
 .icon-unchecked {
     transition: fill 250ms var(--transition-timing-function);
